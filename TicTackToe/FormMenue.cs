@@ -16,5 +16,12 @@ namespace TicTackToe
         {
             InitializeComponent();
         }
+
+        private void buttonStartPvsP_Click(object sender, EventArgs e)
+        {
+            FormGamefield form = new FormGamefield(this);
+            form.Show();
+            this.Visible = false;
+        }
     }
 }

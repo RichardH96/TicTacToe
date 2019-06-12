@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormGamefield.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGamefield.Designer.cs">
+      <DependentUpon>FormGamefield.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormGamefield.resx">
+      <DependentUpon>FormGamefield.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenue.resx">
       <DependentUpon>FormMenue.cs</DependentUpon>
     </EmbeddedResource>
